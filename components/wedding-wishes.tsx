@@ -87,7 +87,7 @@ function AnimatedText({ text, delay = 0 }: { text: string; delay?: number }) {
 function IntroSequence({ onComplete }: { onComplete: () => void }) {
   return (
     <motion.div
-      className="min-h-[80vh] flex flex-col items-center justify-center relative"
+      className="min-h-[100dvh] flex flex-col items-center justify-center relative"
       initial="initial"
       animate="animate"
     >
@@ -307,6 +307,8 @@ export default function WeddingWishes() {
     } catch (err) {
       setError("للأسف حصل غلط... حاول تاني");
       console.error("Error submitting wishes:", err);
+      setError("للأسف حصل غلط... حاول تاني");
+      toast.error("للأسف حصل غلط... حاول تاني");
     } finally {
       setIsSubmitting(false);
     }
