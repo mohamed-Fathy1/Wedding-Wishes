@@ -8,6 +8,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'cinzel': ['Cinzel', 'serif'],
+        'dancing': ['Dancing Script', 'cursive'], // Ensure this is included
+        'cormorant': ['Cormorant Garamond', 'serif'],
+      },
       colors: {
         border: {
           DEFAULT: "hsl(var(--border))",
